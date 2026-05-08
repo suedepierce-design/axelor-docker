@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: axelor
+    env: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+
+databases:
+  - name: axelor-db
+    databaseName: axelor
+    user: axelor
